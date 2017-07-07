@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0796a4</color>
+    <color name="colorPrimaryDark">#085469</color>
+    <color name="colorAccent">#0796a4</color>
+    <color name="colorPrimarysub">#00b2c4</color>
+    <color name="Transparent">#000796a4</color>
+    <color name="ListBackgroundColor">#f0f4f2</color>
+
+    <color name="fragment_bg">#e5e5e5</color>
+</resources>

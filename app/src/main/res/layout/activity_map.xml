@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/map"
+    tools:context="ge.ideadesigngroup.ideamap.Map">
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+      <include layout="@layout/content_map"
+            android:id="@+id/include"/>
+
+    <!--</LinearLayout>-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|end"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_marginBottom="27.5dp"
+            android:layout_marginRight="17.5dp"
+            app:srcCompat="@drawable/ic_settings_grey"
+            app:fabSize="mini"/>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|end"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_marginBottom="27.5dp"
+            android:layout_marginRight="17.5dp"
+            app:srcCompat="@drawable/ic_gps"
+            app:fabSize="mini"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|end"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_marginBottom="27.5dp"
+            android:layout_marginRight="17.5dp"
+            app:srcCompat="@drawable/ic_route"
+            app:fabSize="mini"
+            android:elevation="0dp"
+            app:borderWidth="0dp"
+            />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab4"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_marginBottom="27.5dp"
+        android:layout_marginRight="17.5dp"
+        app:srcCompat="@drawable/ic_search"
+        app:fabSize="mini"
+        android:elevation="0dp"
+        app:borderWidth="0dp"
+        />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="top|left"
+        android:adjustViewBounds="true"
+        android:visibility="visible"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|right"
+        app:rippleColor="@android:color/transparent"
+        app:srcCompat="@drawable/ic_arrow_up"
+        app:useCompatPadding="true" />
+
+
+   <!--<include layout="@layout/map_header"/>-->
+    <include layout="@layout/route_info_menu" />
+</android.support.design.widget.CoordinatorLayout>
